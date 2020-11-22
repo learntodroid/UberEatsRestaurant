@@ -35,6 +35,7 @@ public class UberEatsRestaurantRepository {
     private MutableLiveData<Restaurant> selectedRestaurantLiveData;
 
     private MutableLiveData<List<Order>> ordersLiveData;
+    private MutableLiveData<List<String>> orderIdsLiveData;
 
     public UberEatsRestaurantRepository() {
         this.firebaseAuth = FirebaseAuth.getInstance();
@@ -48,6 +49,7 @@ public class UberEatsRestaurantRepository {
         this.restaurantsLiveData = new MutableLiveData<>();
         this.selectedRestaurantLiveData = new MutableLiveData<>();
         this.ordersLiveData = new MutableLiveData<>();
+        this.orderIdsLiveData = new MutableLiveData<>();
     }
 
     public void login(String email, String password) {
@@ -119,6 +121,7 @@ public class UberEatsRestaurantRepository {
 
     public void queryOrders(String ordersStatus) {
         final List<Order> orders = new ArrayList<>();
+        final List<String> orderIds = new ArrayList<>();
 
         db.collection("orders")
 //                .whereEqualTo("restaurant.title", "McDonald's")
@@ -132,13 +135,41 @@ public class UberEatsRestaurantRepository {
                                 Log.d(UberEatsRestaurantRepository.class.getSimpleName(), document.getId() + " => " + document.getData());
                                 Order order = document.toObject(Order.class);
                                 orders.add(order);
+                                orderIds.add(document.getId());
                             }
                             ordersLiveData.postValue(orders);
+                            orderIdsLiveData.postValue(orderIds);
                         } else {
                             Log.d(UberEatsRestaurantRepository.class.getSimpleName(), "Error getting documents: ", task.getException());
                         }
                     }
                 });
+    }
+
+    public void updateOrderStatus(Order order, String newStatus) {
+        int orderIndex = ordersLiveData.getValue().indexOf(order);
+        String orderId = orderIdsLiveData.getValue().get(orderIndex);
+        String currentStatus = order.getStatus();
+
+        order.setStatus(newStatus);
+
+        DocumentReference orderRef = db.collection("orders").document(orderId);
+        orderRef
+                .set(order)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.d(UberEatsRestaurantRepository.class.getSimpleName(), "DocumentSnapshot successfully updated!");
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w(UberEatsRestaurantRepository.class.getSimpleName(), "Error updating document", e);
+                    }
+                });
+
+        queryOrders(currentStatus);
     }
 
     public void setSelectedRestaurant(Restaurant restaurant) {

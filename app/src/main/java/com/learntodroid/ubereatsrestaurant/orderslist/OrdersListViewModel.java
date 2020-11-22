@@ -20,6 +20,10 @@ public class OrdersListViewModel extends ViewModel {
         uberEatsRestaurantRepository.queryOrders(ordersStatus);
     }
 
+    public void updateOrderStatus(Order order, String newStatus) {
+        uberEatsRestaurantRepository.updateOrderStatus(order, newStatus);
+    }
+
     public MutableLiveData<List<Order>> getOrdersLiveData() {
         return ordersLiveData;
     }
