@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "806254529508",
+    "firebase_url": "https://uber-eats-android-clone.firebaseio.com",
+    "project_id": "uber-eats-android-clone",
+    "storage_bucket": "uber-eats-android-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806254529508:android:7c07b80850215cf6fb95f1",
+        "android_client_info": {
+          "package_name": "com.learntodroid.ubereatsandroidclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806254529508-l5dofpgf24173iifs8ttsq1ltov0c7jp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.learntodroid.ubereatsandroidclone",
+            "certificate_hash": "f74160e59bd1e308bf757da307bcc42287105ad6"
+          }
+        },
+        {
+          "client_id": "806254529508-334531s6ldqpbsr0cpqpmhhrd7gfmnul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMobJSjSwjjdJvE0h6bHtD6pDyKbbmdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806254529508-334531s6ldqpbsr0cpqpmhhrd7gfmnul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806254529508:android:77010a2c71fa4612fb95f1",
+        "android_client_info": {
+          "package_name": "com.learntodroid.ubereatsrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806254529508-334531s6ldqpbsr0cpqpmhhrd7gfmnul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMobJSjSwjjdJvE0h6bHtD6pDyKbbmdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806254529508-334531s6ldqpbsr0cpqpmhhrd7gfmnul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/restaurantListFragment"
+        android:title="My Restaurants"
+        android:icon="@drawable/ic_baseline_restaurant_24"/>
+
+    <item
+        android:id="@+id/ordersFragment"
+        android:title="My Orders"
+        android:icon="@drawable/ic_baseline_assignment_24"/>
+
+</menu>

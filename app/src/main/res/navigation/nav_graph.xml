@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/loginSignUpFragment">
+
+    <fragment
+        android:id="@+id/loginSignUpFragment"
+        android:name="com.learntodroid.ubereatsrestaurant.loginsignup.LoginSignUpFragment"
+        android:label="LoginSignUpFragment" >
+        <action
+            android:id="@+id/action_loginSignUpFragment_to_restaurantListFragment"
+            app:destination="@id/restaurantListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditRestaurantFragment"
+        android:name="com.learntodroid.ubereatsrestaurant.addeditrestaurant.AddEditRestaurantFragment"
+        android:label="AddEditRestaurantFragment" />
+    <fragment
+        android:id="@+id/restaurantListFragment"
+        android:name="com.learntodroid.ubereatsrestaurant.restaurantlist.RestaurantListFragment"
+        android:label="RestaurantListFragment" >
+        <action
+            android:id="@+id/action_restaurantListFragment_to_addEditRestaurantFragment"
+            app:destination="@id/addEditRestaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.learntodroid.ubereatsrestaurant.orderslist.OrdersFragment"
+        android:label="OrdersFragment" />
+</navigation>
