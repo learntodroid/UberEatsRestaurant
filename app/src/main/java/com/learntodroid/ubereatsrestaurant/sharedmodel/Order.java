@@ -1,6 +1,4 @@
-package com.learntodroid.ubereatsrestaurant.orderslist;
-
-import com.learntodroid.ubereatsrestaurant.addeditrestaurant.Restaurant;
+package com.learntodroid.ubereatsrestaurant.sharedmodel;
 
 import java.util.HashMap;
 

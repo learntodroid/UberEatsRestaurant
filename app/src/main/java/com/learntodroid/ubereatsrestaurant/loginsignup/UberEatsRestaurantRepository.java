@@ -16,8 +16,8 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.learntodroid.ubereatsrestaurant.addeditrestaurant.Restaurant;
-import com.learntodroid.ubereatsrestaurant.orderslist.Order;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Restaurant;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Order;
 
 import java.util.ArrayList;
 import java.util.List;

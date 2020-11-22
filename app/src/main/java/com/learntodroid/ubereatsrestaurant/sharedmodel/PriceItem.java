@@ -1,4 +1,4 @@
-package com.learntodroid.ubereatsrestaurant.orderslist;
+package com.learntodroid.ubereatsrestaurant.sharedmodel;
 
 public class PriceItem {
     private String label;

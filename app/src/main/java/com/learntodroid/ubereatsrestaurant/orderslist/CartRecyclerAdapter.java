@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.learntodroid.ubereatsrestaurant.R;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.CartItem;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

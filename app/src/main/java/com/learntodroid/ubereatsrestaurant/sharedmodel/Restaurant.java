@@ -1,4 +1,4 @@
-package com.learntodroid.ubereatsrestaurant.addeditrestaurant;
+package com.learntodroid.ubereatsrestaurant.sharedmodel;
 
 import java.util.List;
 

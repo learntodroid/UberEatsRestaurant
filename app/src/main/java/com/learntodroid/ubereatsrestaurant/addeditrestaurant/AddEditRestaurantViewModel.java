@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.google.firebase.auth.FirebaseUser;
 import com.learntodroid.ubereatsrestaurant.loginsignup.UberEatsRestaurantRepository;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Restaurant;
 
 public class AddEditRestaurantViewModel extends ViewModel {
     private UberEatsRestaurantRepository uberEatsRestaurantRepository;

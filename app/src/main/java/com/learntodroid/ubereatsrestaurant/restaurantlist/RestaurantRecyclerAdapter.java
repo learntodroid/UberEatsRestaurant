@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.learntodroid.ubereatsrestaurant.R;
-import com.learntodroid.ubereatsrestaurant.addeditrestaurant.Restaurant;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Restaurant;
 
 import java.util.ArrayList;
 import java.util.List;

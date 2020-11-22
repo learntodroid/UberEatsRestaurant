@@ -3,7 +3,7 @@ package com.learntodroid.ubereatsrestaurant.restaurantlist;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.learntodroid.ubereatsrestaurant.addeditrestaurant.Restaurant;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Restaurant;
 import com.learntodroid.ubereatsrestaurant.loginsignup.UberEatsRestaurantRepository;
 
 import java.util.List;

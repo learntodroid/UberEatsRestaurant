@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.learntodroid.ubereatsrestaurant.R;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Order;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

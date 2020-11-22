@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.learntodroid.ubereatsrestaurant.R;
+import com.learntodroid.ubereatsrestaurant.sharedmodel.Restaurant;
 
 import java.util.ArrayList;
 import java.util.Arrays;
